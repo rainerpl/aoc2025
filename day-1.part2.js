@@ -1,19 +1,6 @@
 
 import fs from 'fs';
 let input = fs.readFileSync("day-1.data.txt", "utf8");
-const useDummyInput = () => {
-    input = `L68
-L30
-R48
-L5
-R60
-L55
-L1
-L99
-R14
-L82`;
-}
-// useDummyInput();
 const getInputLines = () => {
     const instructions = [];
     input.split('\n').filter(v => v).forEach(v => {
